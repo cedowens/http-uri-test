@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"net/http"
-  "strings"
-  "os"
-  "encoding/hex"
+        "strings"
+        "os"
+        "encoding/hex"
 )
 
 func main() {
