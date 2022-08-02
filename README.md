@@ -13,6 +13,8 @@ This will start your golang http server that will listen for and parse inbound h
 
 
 ## Client Side:
+1. > ulimit -n 1000000
+
 1. > cd client
 
 2. Replace the placeholder string "domain-or-IP-here" in the client.go file with the domain or IP address that you are using for your web server.
